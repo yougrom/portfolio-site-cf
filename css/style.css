@@ -47,7 +47,7 @@ body {
     color: var(--base-color-2);
 
     background-color: var(--base-color-3);
-    background-image: url("/html_academy/courses/careerfoundry/portfolio-website/img/noise.png");
+    background-image: url("/cf-projects/portfolio-website/img/noise.png");
     background-size: auto;
     background-repeat: repeat;
 }
