@@ -47,7 +47,7 @@ body {
     color: var(--base-color-2);
 
     background-color: var(--base-color-3);
-    background-image: url("/img/noise-01.png");
+    background-image: url("/portfolio-site-cf/img/noise-01.png");
     background-size: auto;
     background-repeat: repeat;
 }
@@ -206,7 +206,7 @@ body:after {
     display: block;
     width: calc(100% + 400px);
     height: calc(100% + 200px);
-    background-image: url("/img/ellipse-01.svg");
+    background-image: url("/portfolio-site-cf/img/ellipse-01.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 116px -200px;
