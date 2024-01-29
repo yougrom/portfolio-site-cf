@@ -12,7 +12,7 @@ Add Global Text Parametrs
     --color-grey: rgb(204 204 204 / 50%);
     --font-base: 'Inter', sans-serif;
     --transition-duration: 0.5s;
-    --largerScale: 1.05;
+    --largerScale: 1.01;
 }
 
 html,
@@ -720,10 +720,12 @@ Work Page
 }
 
 .project-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
     background-color: var(--box-shadow-color);
     border-radius: 10px;
-
     transition-property: box-shadow, transform;
     transition-duration: var(--transition-duration), var(--transition-duration);
 }
