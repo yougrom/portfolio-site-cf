@@ -206,7 +206,7 @@ body:after {
     display: block;
     width: calc(100% + 400px);
     height: calc(100% + 200px);
-    background-image: url('/cf-projects/portfolio-website/img/ellipse.svg');
+    background-image: url("/cf-projects/portfolio-website/img/ellipse.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 116px -200px;
