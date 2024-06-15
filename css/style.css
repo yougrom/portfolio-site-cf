@@ -10,9 +10,10 @@ Add Global Text Parametrs
   --color-white: #fff;
   --color-black: #000;
   --color-grey: rgb(204 204 204 / 50%);
-  --font-base: "Inter", sans-serif;
+  --font-base: 'Inter', sans-serif;
   --transition-duration: 0.5s;
   --largerScale: 1.01;
+  --transporent: rgba(255, 255, 255, 0); /* Прозрачный фон */
 }
 
 html,
@@ -47,7 +48,7 @@ body {
   color: var(--base-color-2);
 
   background-color: var(--base-color-3);
-  background-image: url("/portfolio-site-cf/img/noise-01.png");
+  background-image: url('/portfolio-site-cf/img/noise-01.png');
   background-size: auto;
   background-repeat: repeat;
 }
@@ -58,8 +59,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -93,6 +94,40 @@ a {
 /*==============================
  Header 
  ==============================*/
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: var(--base-color-1); /* Цвет текста при наведении и активный цвет */
+}
+.custom-navbar.scrolled {
+  background-color: var(--base-color-3); /* Тёмный фон при прокрутке */
+}
+.custom-navbar {
+  background-color: var(--transporent); /* Прозрачный фон по умолчанию */
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar.custom-bg {
+  background-color: var(--base-color-3); /* Тёмный фон */
+}
+
+.custom-navbar .nav-link {
+  color: var(--base-color-2); /* Цвет текста */
+  font-size: 1rem; /* Размер шрифта */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--base-color-1); /* Цвет текста при наведении */
+}
+
+.navbar-toggler {
+  border-color: var(--base-color-2); /* Цвет иконки для мобильного меню */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .main-navigation a {
   font-size: 18px;
   line-height: 20px;
@@ -168,7 +203,7 @@ a {
 
 /*content wrapper*/
 .main-content-wrapper {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 /*main style*/
@@ -199,14 +234,14 @@ h3 {
 }
 /*background img*/
 body:after {
-  content: "";
+  content: '';
   position: absolute;
   left: -400px;
   bottom: -200px;
   display: block;
   width: calc(100% + 400px);
   height: calc(100% + 200px);
-  background-image: url("/portfolio-site-cf/img/ellipse-01.svg");
+  background-image: url('/portfolio-site-cf/img/ellipse-01.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 116px -200px;
@@ -241,6 +276,7 @@ body:after {
 
 .hero__text-content {
   margin-bottom: 35px;
+  margin-top: 100px;
 }
 
 /*main tablet*/

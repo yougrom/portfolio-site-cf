@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuriy Gromov's Portfolio - MyFlix Project</title>
+  <link rel="stylesheet" href="./css/project.css">
+</head>
+
+<body>
+  <header>
+    <h1>Yuriy Gromov's Portfolio</h1>
+  </header>
+  <main>
+    <section id="myflix-project">
+      <div class="intro">
+        <h2>MyFlix Movie App Project</h2>
+        <img src="placeholder.png" alt="MyFlix Project Screenshot" class="project-image">
+        <p>Welcome to the myFlix Movie App Project</p>
+        <p>MyFlix Movie App is a sophisticated web application crafted with the MERN stack and Angular CLI. It is
+          designed to provide movie enthusiasts with an immersive single-page application (SPA) experience. It features
+          a vast database of movies, enabling users to explore detailed information, bookmark their favourites, and
+          manage personal profiles. The application prioritizes user security by implementing JWT for authentication and
+          employing robust password hashing mechanisms.</p>
+        <div class="links">
+          <a href="https://github.com/yougrom/myflix">GitHub API</a>
+          <a href="https://github.com/yougrom/myFlix-Angular-client">GitHub Angular</a>
+          <a href="https://github.com/yougrom/myflix-client-react">GitHub React</a>
+        </div>
+      </div>
+      <div class="content-grid">
+        <section class="content-block">
+          <h3>Overview</h3>
+          <p>This project aimed to construct a fully functional web application, integrating server-side and client-side
+            development from the ground up. This project enhances a professional portfolio by showcasing a high level of
+            proficiency in full-stack JavaScript development.</p>
+          <img src="overview-placeholder.png" alt="Overview Screenshot" class="project-image">
+        </section>
+        <section class="content-block">
+          <h3>Objective</h3>
+          <p>The primary purpose of the MyFlix Movie App is to demonstrate proficiency in full-stack JavaScript
+            development as part of a web development course at CareerFoundry. This project showcases the integration of
+            modern web technologies to create a secure, user-friendly platform for exploring and managing movie
+            information.</p>
+          <img src="objective-placeholder.png" alt="Objective Screenshot" class="project-image">
+        </section>
+        <section class="content-block">
+          <h3>List of Technologies</h3>
+          <ul>
+            <li>Core Technologies: HTML, CSS, JavaScript, TypeScript | React, React Redux, React Bootstrap</li>
+            <li>Libraries & Frameworks: Angular, Material-UI</li>
+            <li>Data Handling: AJAX, JSON</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Server-Side Technologies: Node.js, Express.js</li>
+            <li>API Development: JSON, RESTful APIs, Postman</li>
+            <li>Hosting & Cloud Services: AWS, Firestore, Heroku, Netlify</li>
+            <li>Databases: Relational (PostgreSQL), Non-relational (MongoDB)</li>
+          </ul>
+        </section>
+        <section class="content-block">
+          <h3>Backend</h3>
+          <p>For the server side, I created a RESTful API using Node.js and Express and a non-relational database
+            (MongoDB). The API allows data about movies and users to be retrieved from the database through common HTTP
+            requests, which return JSON. The API and database are connected through a business logic layer using
+            Mongoose.</p>
+          <img src="backend-placeholder.png" alt="Backend Screenshot" class="project-image">
+        </section>
+        <section class="content-block">
+          <h3>Authentication</h3>
+          <p>I also implemented a login endpoint with basic HTTP authentication, returning an authorization JWT (token)
+            to the client. This ensures that only logged-in users can access the database. Initially, the mechanisms of
+            authentication and authorization were quite challenging for me. However, after some time and effort, they
+            became clear and functional. I used Postman to test the endpoints.</p>
+          <img src="authentication-placeholder.png" alt="Authentication Screenshot" class="project-image">
+        </section>
+        <section class="content-block">
+          <h3>Business Logic</h3>
+          <p>Utilizing CRUD operations, the API delivers movie information in JSON format, serving as the robust backend
+            for the MyFlix Movie App. This enables comprehensive interaction with movie, director, and genre data,
+            ensuring data is consistently formatted and easily accessible.</p>
+          <img src="business-logic-placeholder.png" alt="Business Logic Screenshot" class="project-image">
+        </section>
+        <section class="content-block">
+          <h3>Security</h3>
+          <p>The API is designed following REST principles, providing intuitive URLs, responses in JSON format, and
+            standard HTTP status codes. It includes user registration and management functionalities features, as well
+            as implementing JWT for secure authentication and password hashing for enhanced data protection.</p>
+          <img src="security-placeholder.png" alt="Security Screenshot" class="project-image">
+        </section>
+        <section class="content-block">
+          <h3>Deployment</h3>
+          <p>I've successfully connected my Heroku application to my MongoDB Atlas database by updating the connection
+            URI in the "index.js" file with environment variables, pushed the changes to Heroku, and confirmed the app
+            loads and connects to my database.</p>
+          <img src="deployment-placeholder.png" alt="Deployment Screenshot" class="project-image">
+        </section>
+        <section class="content-block">
+          <h3>Profile View</h3>
+          <p>Users can view their registered details, update their profile information, and manage their list of
+            favourite movies.</p>
+          <img src="profile-view-placeholder.png" alt="Profile View Screenshot" class="project-image">
+        </section>
+        <section class="content-block">
+          <h3>Register / Login</h3>
+          <p>New users can create an account with a username, email, and password. Registered users can log in with
+            their credentials. Passwords are securely hashed and JWT is used for secure sessions.</p>
+          <img src="register-login-placeholder.png" alt="Register / Login Screenshot" class="project-image">
+        </section>
+        <section class="content-block">
+          <h3>Retrospective</h3>
+          <p>Developing the MyFlix Movie App was an engaging experience, especially building the RESTful API and setting
+            up the backend using Node.js, Express, and MongoDB. The biggest challenge was integrating all the components
+            efficiently and ensuring seamless communication between the front and back. In the future, I plan to expand
+            the MyFlix Movie App by incorporating additional features like advanced search and filtering options and
+            personalized recommendations. I also aim to enhance the UI/UX by adding intuitive navigation and better
+            accessibility features.</p>
+          <img src="retrospective-placeholder.png" alt="Retrospective Screenshot" class="project-image">
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Contact Information</p>
+    <ul>
+      <li>Phone: +49 176 712 40 223</li>
+      <li>Email: <a href="mailto:youriy.gromov@gmail.com">youriy.gromov@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/yougrom">@yougrom</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/yuriy-gromov/">@yuriy-gromov</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
