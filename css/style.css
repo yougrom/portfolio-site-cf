@@ -262,10 +262,11 @@ body:after {
   margin-bottom: 25px;
 }
 
-.main-content p,
+.main-content .subtitle,
 .about p {
   margin: 0;
   margin-bottom: 50px;
+  max-width: 480px;
 }
 
 .main-content p span {
@@ -321,8 +322,8 @@ body:after {
 /*main desktop*/
 @media all and (min-width: 981px) {
   h1 {
-    font-size: 80px;
-    line-height: 112px;
+    font-size: 45px;
+    line-height: 54px;
   }
 
   h2 {
@@ -333,6 +334,39 @@ body:after {
   h3 {
     font-size: 32px;
     line-height: 48px;
+  }
+}
+
+/*==============================
+ Hero text animation 
+ ==============================*/
+.typing-effect {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is hidden initially */
+  white-space: nowrap; /* Keeps the text on a single line */
+  border-right: 3px solid; /* Adds a cursor effect */
+  animation: blink-caret 0.75s step-end infinite;
+  font-family: monospace;
+}
+
+/* The typing effect animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The cursor blink effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
   }
 }
 
@@ -390,16 +424,30 @@ body:after {
     text-align: center;
   }
 }
+.main-footer .footer-impressum {
+  margin-top: 15px;
+}
+.main-footer .footer-impressum a {
+  color: var(--base-color-2);
+}
+.main-footer .footer-impressum a:hover {
+  color: var(--base-color-1);
+}
 
 /*==============================
 About Page
 ===============================*/
+.about,
+.skills {
+  margin: 50px 0px;
+}
 /*header h1*/
 .about h1 {
   text-align: left;
 }
 
-.about h1 {
+.about h1,
+.skills h2 {
   margin: 0;
   margin-bottom: 25px;
 }
@@ -444,70 +492,20 @@ caption {
   caption-side: bottom;
 }
 
-/*Animation*/
-/*sun start*/
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-/*cloud small start*/
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-/*cloud big start*/
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
 /*About tablet*/
 @media all and (min-width: 768px) {
   /*header h1*/
-  .about h1 {
+  .about h1,
+  .skills h2 {
+    text-align: center;
+  }
+  .about .contact_button {
     text-align: center;
   }
 
   /*text p*/
-  .about p {
-    min-width: 700px;
+  .about .about__summery {
+    min-width: 800px;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -517,6 +515,15 @@ caption {
   /*table*/
   .about-table {
     margin: 0 auto;
+  }
+  /*Skills*/
+  .case-study_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .case-study_section .txt-container {
+    max-width: 48%;
   }
 }
 
@@ -686,8 +693,8 @@ input::placeholder {
 /*Contact tablet*/
 @media all and (min-width: 768px) {
   .contacts h2 {
-    font-size: 80px;
-    line-height: 96px;
+    font-size: 60px;
+    line-height: 72px;
   }
 }
 
@@ -715,6 +722,14 @@ input::placeholder {
   }
 }
 
+@media all and (max-width: 983px) {
+  .contact_button .button {
+    margin-bottom: 20px;
+  }
+}
+.contact_button .button {
+  margin-right: 10px;
+}
 /*==============================
 Work Page
 ===============================*/
@@ -728,12 +743,12 @@ Work Page
 .work-grid h2,
 .work-grid p {
   margin: 0;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 .work-grid h2 {
-  font-size: 40px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .work-grid a {
@@ -788,4 +803,8 @@ Work Page
   .project-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.work-grid .screenshot {
+  border-radius: 5px;
 }

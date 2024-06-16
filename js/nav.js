@@ -29,3 +29,40 @@ document.addEventListener('DOMContentLoaded', function () {
   //   }
   // });
 });
+
+// Эффект бегущей строки или напечатанные строки
+// document.addEventListener('DOMContentLoaded', function () {
+//   var lines = [
+//     document.getElementById('line1'),
+//     document.getElementById('line2'),
+//     document.getElementById('line3'),
+//   ];
+
+//   lines.forEach(function (line) {
+//     line.dataset.text = line.innerHTML;
+//     line.innerHTML = '';
+//   });
+
+//   var currentLine = 0;
+//   var i = 0;
+
+//   function typeWriter() {
+//     if (currentLine < lines.length) {
+//       var text = lines[currentLine].dataset.text;
+//       if (i < text.length) {
+//         lines[currentLine].innerHTML += text.charAt(i);
+//         i++;
+//         setTimeout(typeWriter, 100); // Adjust typing speed here
+//       } else {
+//         lines[currentLine].style.borderRight = 'none'; // Remove cursor after line is done
+//         currentLine++;
+//         i = 0;
+//         if (currentLine < lines.length) {
+//           setTimeout(typeWriter, 100); // Start typing next line
+//         }
+//       }
+//     }
+//   }
+
+//   typeWriter();
+// });
