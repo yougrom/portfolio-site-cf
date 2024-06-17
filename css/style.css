@@ -265,8 +265,11 @@ body:after {
 .main-content .subtitle,
 .about p {
   margin: 0;
-  margin-bottom: 50px;
-  max-width: 480px;
+  max-width: 540px;
+}
+
+.contact_button-top {
+  margin-top: 50px;
 }
 
 .main-content p span {
@@ -337,38 +340,13 @@ body:after {
   }
 }
 
+.hero__text-content > p:nth-child(2) {
+  margin-bottom: 15px;
+}
+
 /*==============================
  Hero text animation 
  ==============================*/
-.typing-effect {
-  display: inline-block;
-  overflow: hidden; /* Ensures the content is hidden initially */
-  white-space: nowrap; /* Keeps the text on a single line */
-  border-right: 3px solid; /* Adds a cursor effect */
-  animation: blink-caret 0.75s step-end infinite;
-  font-family: monospace;
-}
-
-/* The typing effect animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The cursor blink effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-}
 
 /*==============================
  Footer 
@@ -751,7 +729,7 @@ Work Page
   line-height: 36px;
 }
 
-.work-grid a {
+.work-grid .underline {
   color: var(--base-color-2);
   text-decoration: underline;
 
@@ -759,7 +737,7 @@ Work Page
   transition-duration: var(--transition-duration);
 }
 
-.work-grid a:hover {
+.work-grid .underline:hover {
   color: var(--base-color-1);
 }
 
@@ -807,4 +785,10 @@ Work Page
 
 .work-grid .screenshot {
   border-radius: 5px;
+}
+
+/*buttons*/
+.contact_button_work {
+  text-align: center;
+  margin-top: 50px;
 }
