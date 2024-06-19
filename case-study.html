@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/style.production.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="schrtcut icon" href="img/favicon.ico">
+  <title>About Yuriy</title>
+</head>
+
+<body>
+  <header class="main-header container">
+    <nav class="navbar navbar-dark fixed-top navbar-expand-sm custom-navbar">
+      <div class="container-fluid">
+        <a href="#"><img src="img/yg-logo.svg" width="50" height="auto" alt="Personal logo of Yuriy Gromov"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link " href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About me</a>
+            <div class="nav-item dropdown">
+              <a class="nav-link" href="work.html" id="workLink">Work</a>
+              <button class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="case-study.html">Case Study</a></li>
+              </ul>
+            </div>
+
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="main-content-wrapper project">
+      <section class="project__content-section">
+        <h1 class="project__titel project__title--center">Welcome to the myFlix Movie App Project</h1>
+        <img src="img/hero.jpg" class="project__image margin-bottom" width="1280" height="600"
+          alt="MyFlix Project Screenshot">
+        <p class="project__description project__description--center margin-bottom">MyFlix Movie App is a sophisticated
+          web application
+          crafted with the MERN stack and Angular CLI. It is designed to provide movie enthusiasts with an immersive
+          single-page application (SPA) experience. It features a vast database of movies, enabling users to explore
+          detailed information, bookmark their favourites, and manage personal profiles. The application prioritizes
+          user security by implementing JWT for authentication and employing robust password hashing mechanisms.</p>
+        <div class="project__buttons">
+          <a href="https://github.com/yougrom/myflix" class="project__button button" target="_blank">GitHub API</a>
+          <a href="https://github.com/yougrom/myFlix-Angular-client" class="project__button button"
+            target="_blank">GitHub Angular</a>
+          <a href="https://github.com/yougrom/myflix-client-react" class="project__button button" target="_blank">GitHub
+            React</a>
+        </div>
+      </section>
+      <hr>
+      <section class="project__content-section">
+        <div class="project__purpose project__title-text">
+          <h3 class="project__title">Purpose</h3>
+          <p class="project__description">The prima ry purpose of the MyFli x Movie App is to demonstr ate proficiency
+            in full-stack JavaScript development as pa rt of a web development course at Ca reerFound ry. This project
+            showcases the integr ation of modern web technologies to create a secure, user-friendly platform for
+            exploring and managing movie information.</p>
+        </div>
+        <img src="img/hero-002.jpg" class="project__image" width="1280" height="600" alt="Overview Screenshot">
+        <div class="project__objective project__title-text project__title-text--reverse">
+          <h3 class="project__title">Objective</h3>
+          <p class="project__description">This project aimed to construct a fully functional web application,
+            integrating server-side and client-side development from the ground up. This project enhances a professional
+            portfolio by showcasing a high level of proficiency in full-stack JavaScript development.</p>
+        </div>
+      </section>
+      <hr>
+      <section class="project__duration project__content-section">
+        <h2 class="project__title project__title--center">Duration</h2>
+        <p class="project__description project__description--center">Developing the application on the client si de took
+          approximately twice as long as developing it on the server si de. I focused on thoroughly understand ing
+          Angula r and its inter action with the API, ensuring that I achieved the desi red functionality and user
+          experience.</p>
+      </section>
+
+      <section class="project__duration project__content-section">
+        <div class="project__title-image">
+          <img src="img/photo-001.jpg" class="project__image" width="725" height="525" alt="Overview Screenshot">
+          <div>
+            <h3 class="project__title">List of Technologies:</h3>
+            <ul class="project__technology-list">
+              <li>Core Technologies: HTML, CSS, JavaScript, TypeScript | React, React Redux, React Bootstrap</li>
+              <li>Libraries & Frameworks: Angular, Material-UI</li>
+              <li>Data Handling: AJAX, JSON</li>
+              <li>Version Control: Git, GitHub</li>
+              <li>Server-Side Technologies: Node.js, Express.js</li>
+              <li>API Development: JSON, RESTful APIs, Postman</li>
+              <li>Hosting & Cloud Services: AWS, Firestore, Heroku, Netlify</li>
+              <li>Databases: Relational (PostgreSQL), Non-relational (MongoDB)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="project__duration project__backend project__content-section">
+        <div class="project__title-image project__title-image--reverse">
+          <img src="img/photo-002.jpg" class="project__image" width="725" height="525" alt="Overview Screenshot">
+          <div>
+            <h3 class="project__title">Backend:</h3>
+            <p class="project__description">For the server side, I created a RESTful API using Node.js and Express and a
+              non-relational database (MongoDB). The API allows data about movies and users to be retrieved from the
+              database through common HTTP requests, which return JSON. The API and database are connected through a
+              business logic layer using Mongoose.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project__authentication project__duration project__content-section">
+        <div class="project__title-image">
+          <img src="img/photo-003.jpg" class="project__image" width="725" height="525" alt="Overview Screenshot">
+          <div>
+            <h3 class="project__title">Authentication:</h3>
+            <p class="project__description">I also implemented a login endpoint with basic HTTP authentication,
+              returning an authori zation JWT (token) to the client. This ensures th at only logged-in users can access
+              the database. Initi ally, the mech anisms of authentication and authori zation were quite ch allenging for
+              me. However, after some time and effort, they became clea r and functional. I used Postman to test the
+              endpoints.</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="project__content-section">
+        <div class="project__server-side">
+          <img src="img/photo-server-side.jpg" width="1280" height="300" alt="Server side image"
+            class="project__image project__server-side--image margin-bottom">
+          <h2 class="project__title project__title--center project__server-side--title"><a
+              href="https://github.com/yougrom/myflix" target="_blank" class="project__arrow-link">Server side
+              &rarr;</a></h2>
+        </div>
+        <p class="project__description project__description--center margin-bottom">I created a RESTful API using Node.js
+          and Express, designed to interact with a non-relational database (MongoDB) through Mongoose. The API follows
+          REST principles, supporting standard HTTP methods like GET and POST for seamless data retrieval and storage.
+          By utilizing CRUD operations, the API provides movie information in JSON format, acting as the robust backend
+          for the MyFlix Movie App. This enables comprehensive interaction with movie, director, and genre data.</p>
+        <ul class="project__side-details">
+          <li class="project__side-item">
+            <h4 class="project-item__title">Basics</h4>
+            <p class="project-item__description">I developed a RESTful API using Node.js and Express, designed to
+              interact with a non-relational database (MongoDB) through Mongoose. The API adheres to REST principles,
+              supporting standard HTTP methods such as GET and POST for seamless data retrieval and storage.</p>
+          </li>
+          <li class="project__side-item">
+            <h4 class="project-item__title">Business Logic</h4>
+            <p class="project-item__description">Utilizing CRUD operations, the API delivers movie information in JSON
+              format, serving as the robust backend for the MyFlix Movie App. This enables comprehensive interaction
+              with movie, director, and genre data, ensuring data is consistently formatted and easily accessible.</p>
+          </li>
+          <li class="project__side-item">
+            <h4 class="project-item__title">Security</h4>
+            <p class="project-item__description">The API is designed following REST principles, providing intuitive
+              URLs, responses in JSON format, and standard HTTP status codes. It includes user registration and
+              management functionalities features, as wellas implementing JWT for secure authentication and password
+              hashing for enhanced data protection.</p>
+          </li>
+          <li class="project__side-item">
+            <h4 class="project-item__title">Deployment</h4>
+            <p class="project-item__description">I've successfully connected my Heroku application to my MongoDB Atlas
+              database by updating the connection URI in the "index.js" file with environment variables, pushed the
+              changes to Heroku, and confirmed the app loads and connects to my database.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="project__content-section">
+        <div class="project__server-side">
+          <img src="img/photo-client-side.jpg" width="1280" height="300" alt="Server side image"
+            class="project__image project__server-side--image margin-bottom">
+          <h2 class="project__title project__title--center project__server-side--title"><a
+              href="https://yougrom.github.io/myFlix-Angular-client/welcome" target="_blank"
+              class="project__arrow-link">Client side
+              &rarr;</a></h2>
+        </div>
+        <p class="project-item__description project__description--center margin-bottom">After completing the API, I
+          developed the user interface required for interacting with the server side. This single-page, responsive
+          application was created using Angular and Angular Material. It includes multiple interface views, such as a
+          welcome view for user login and registration, a main view displaying all movies, and a profile view where
+          users can update their information and manage their list of favourite movies. </p>
+        <ul class="project__side-details">
+          <li class="project__side-item">
+            <h4 class="project-item__title">The Build</h4>
+            <p class="project-item__description">This project aimed to create a comprehensive client-side application
+              for MyFlix based on its pre-existing server-side implementation. To achieve this, I used Angular because
+              it is powerful, widely used, and adheres to Google's Material Design guidelines. Then, I used Angular CLI
+              to complete the build operations.</p>
+          </li>
+          <li class="project__side-item">
+            <h4 class="project-item__title">Create Components</h4>
+            <p class="project-item__description">Once the initial build was done, I created components for the different
+              views and services to handle state management and API interactions. I used Angular Material to ensure a
+              consistent and visually appealing UI.</p>
+          </li>
+          <li class="project__side-item">
+            <h4 class="project-item__title">Design</h4>
+            <p class="project-item__description">I utilized Angular Material to design the pages' layouts, ensuring a
+              responsive and user-friendly interface. I also implemented client-side app routing to enable seamless
+              navigation between views and integrated authentication for secure access.</p>
+          </li>
+          <li class="project__side-item">
+            <h4 class="project-item__title">Final Product</h4>
+            <p class="project-item__description">Finally, I added features to manage the application's state and enhance
+              functionality. After thorough testing using Postman, I deployed the application on GitHub and connected it
+              to the MongoDB Atlas database via Heroku. This ensured that my app was scalable and ready for movie
+              enthusiasts.</p>
+          </li>
+        </ul>
+      </section>
+      <hr>
+      <section class="project__content-section">
+        <div class="project__title-text margin-bottom">
+          <h3 class="project__title">Profile View:</h3>
+          <div class="project__profile">
+            <h4 class="project__profile--title">User Profile Functionality:</h4>
+            <ul class="project__profile--item">
+              <li>View User Details: Users can view their registered details, including username, email, and date of
+                birth.</li>
+              <li>Update Information: Users have the ability to update their profile information, such as changing their
+                username, email, or date of birth.</li>
+              <li>Deregister Account: Users can opt to delete their account if they choose to no longer use the service.
+              </li>
+              <li>Favorite Movies: Users can view a list of their favorite movies, which they have bookmarked for easy
+                access.</li>
+              <li>Manage Favorites: Users can add or remove movies from their list of favorites, allowing them to keep
+                their preferred movie collection up to date.</li>
+            </ul>
+          </div>
+        </div>
+        <img src="img/hero-003.jpg" class="project__image" width="1280" height="600" alt="Overview Screenshot">
+      </section>
+
+      <section class="project__content-section">
+        <div class="project__title-text margin-bottom">
+          <h3 class="project__title">Register / Login</h3>
+          <div class="project__profile">
+            <h4 class="project__profile--title">Register / Login Functionality:</h4>
+            <ul class="project__profile--item">
+              <li>User Registration: New users can create an account with a username, email, and password, with form
+                validation.</li>
+              <li>User Login: Registered users log in with their username and password for access to features.</li>
+              <li>Password Security: Passwords are securely hashed and JWT is used for secure sessions.</li>
+              <li>Error Handling: Forms provide feedback on incorrect credentials or incomplete submissions.</li>
+              <li>Session Management: Users stay authenticated throughout their session without re-entering credentials.
+              </li>
+              <li>Logout: Users can securely log out to prevent unauthorized access.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__profile--images">
+          <img src="img/photo-004.jpg" class="project__image" width="725" height="525" alt="Overview Screenshot">
+          <img src="img/photo-005.jpg" class="project__image" width="725" height="525" alt="Overview Screenshot">
+        </div>
+      </section>
+      <hr>
+      <section class="project__content-section">
+        <img src="img/header-007.jpg" class="project__image margin-bottom" width="1280" height="350"
+          alt="Overview Screenshot">
+
+        <h3 class="project__title project__title--center margin-bottom">Retrospective</h3>
+        <ul class="project__retrospective margin-bottom">
+          <li class="project__retrospective--item">
+            <h4 class="project-retrospective--titel">What Went Well?</h4>
+            <p class="project__description">The biggest challenge was integrating all the components efficiently and
+              ensuring seamless communication between the front and back. Balancing the complexity of implementing
+              Angular with Angular Material for the front end while managing server-side functionalities was tough. Time
+              management was also challenging, as I had to ensure thorough testing and debugging using tools like
+              Postman to ensure optimal functionality.</p>
+          </li>
+          <li class="project__retrospective--item">
+            <h4 class="project-retrospective--titel">What Didn't Go Well</h4>
+            <p class="project__description">Once the initial build was done, I created components for the different
+              views and services to handle state management and API interactions. I used Angular Material to ensure a
+              consistent and visually appealing UI.</p>
+          </li>
+          <li class="project__retrospective--item">
+            <h4 class="project-retrospective--titel">Future Steps</h4>
+            <p class="project__description">In the future, I plan to expand the MyFlix Movie App by incorporating
+              additional features like advanced search and filtering options and personalized recommendations. I also
+              aim to enhance the UI/UX by adding intuitive navigation and better accessibility features. Another
+              critical step would be implementing more comprehensive testing strategies, including automated tests, to
+              ensure ongoing stability and performance.</p>
+          </li>
+          <li class="project__retrospective--item">
+            <h4 class="project-retrospective--titel">Final Thoughts</h4>
+            <p class="project__description">Overall, I'm proud of the final product. The MyFlix Movie App showcases my
+              ability to develop a complete application using the MERN stack and Angular. The project highlights my
+              understanding of both frontend and backend development and the integration of secure user authentication
+              and data management. This project has provided valuable insights and experiences, preparing me for future
+              web development challenges.</p>
+          </li>
+        </ul>
+        <div class="project__buttons">
+          <a href="https://github.com/yougrom/myflix" class="project__button button" target="_blank">GitHub API</a>
+          <a href="https://yougrom.github.io/myFlix-Angular-client/welcome" class="project__button button"
+            target="_blank">Project Angular</a>
+          <a href="https://myflix-gromov.netlify.app/login" class="project__button button" target="_blank">Project
+            React</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="main-footer container">
+    <div class="footer-items">
+      <p>Find me on</p>
+      <ul>
+        <li><a href="https://github.com/yougrom" target="_blank">
+            <span class="visually-hidden">GitHub</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a></li>
+        <li><a href="https://twitter.com/yougrom" target="_blank">
+            <span class="visually-hidden">X</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" version="1.1">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+              </path>
+            </svg>
+          </a></li>
+        <li><a href="https://www.linkedin.com/in/yuriy-gromov/" target="_blank">
+            <span class="visually-hidden">LinkedIn</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a></li>
+      </ul>
+      <p class="footer-impressum">
+        <a href="impressum.html">Impressum</a>
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./js/nav.js"></script>
+</body>
+
+</html>

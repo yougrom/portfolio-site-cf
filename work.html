@@ -29,7 +29,17 @@
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="about.html">About me</a>
-                        <a class="nav-link active" aria-current="page" href="#">Work</a>
+
+                        <div class="nav-item dropdown">
+                            <a class="nav-link active" href="work.html" id="workLink" aria-current="page">Work</a>
+                            <button class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="case-study.html">Case Study</a></li>
+                            </ul>
+                        </div>
+
                         <a class="nav-link" href="contact.html">Contact</a>
                     </div>
                 </div>
@@ -46,13 +56,17 @@
                     <img class="screenshot" width="600" height="339" src="img/001.jpg" alt="Portfolio screenshot">
                     <p>In this project, I developed a RESTful API for an application called "myFlix" that communicates
                         with a database storing information about various movies and users.</p>
+
                     <p>
                         <b>Technologies utilized in this project include:</b> Node.js, Express, Passport, MongoDB Atlas,
                         Mongoose, and Postman (for testing). For more details, please visit my GitHub.
                     </p>
+                    <a href="case-study.html" class="underline button__margin--bottom">Case Study</a>
                     <a href="https://github.com/yougrom/myflix" target="_blank" class="underline">Go to project on
                         GitHub</a>
+
                 </div>
+
                 <div class="project-list__item">
                     <h2><a href="https://yougrom.github.io/myFlix-Angular-client/welcome" target="_blank"
                             class="underline">myFlix App
@@ -65,8 +79,10 @@
                         <b>Technologies utilized in this project include:</b> Angular, TypeScript, Angular Material, and
                         TypeDoc. For more details, please visit my GitHub.
                     </p>
+                    <a href="case-study.html" class="underline button__margin--bottom">Case Study</a>
                     <a href="https://github.com/yougrom/myFlix-Angular-client" target="_blank" class="underline">Go to
                         project on GitHub</a>
+
                 </div>
 
                 <div class="project-list__item">
@@ -80,6 +96,7 @@
                         <b>Technologies utilized in this project include:</b> React, Parcel, Axios, and React Bootstrap.
                         For more details, please visit my GitHub.
                     </p>
+                    <a href="case-study.html" class="underline button__margin--bottom">Case Study</a>
                     <a href="https://github.com/yougrom/myflix-client-react" target="_blank" class="underline">Go to
                         project on GitHub</a>
                 </div>

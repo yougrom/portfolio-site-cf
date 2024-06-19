@@ -91,6 +91,10 @@ a {
   padding: 0;
 }
 
+::marker {
+  color: var(--base-color-1);
+}
+
 /*==============================
  Header 
  ==============================*/
@@ -177,6 +181,39 @@ a {
 
 .site-navigatin li:last-child a {
   padding-right: 0px;
+}
+
+/*dropdown menu*/
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.nav-item .dropdown-toggle::after {
+  content: '';
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 1em;
+  border: 0.3em solid transparent;
+  border-top-color: #fff;
+}
+.nav-item .dropdown-toggle:focus {
+  outline: none;
+}
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+.nav-link.dropdown-toggle {
+  position: absolute;
+  top: 12px;
+  left: 46px;
+}
+.nav-item.dropdown {
+  margin-right: 10px;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  color: var(--base-color-1);
+  text-decoration: none;
+  background-color: var(--base-color-2);
 }
 
 @media all and (max-width: 767px) {
@@ -415,9 +452,12 @@ body:after {
 /*==============================
 About Page
 ===============================*/
-.about,
+.about {
+  margin: 0 0 50px 0;
+}
+
 .skills {
-  margin: 50px 0px;
+  margin: 50px 0 0 0;
 }
 /*header h1*/
 .about h1 {
@@ -791,4 +831,8 @@ Work Page
 .contact_button_work {
   text-align: center;
   margin-top: 50px;
+}
+
+.button__margin--bottom {
+  margin-bottom: 15px;
 }
