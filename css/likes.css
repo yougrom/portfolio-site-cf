@@ -1,0 +1,47 @@
+.news-stats .heart {
+  padding: 12px 10px;
+  min-width: 40px;
+  min-height: 34px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 12px;
+  cursor: pointer;
+}
+
+.heart .likes-number {
+  margin-left: 24px;
+  line-height: 14px;
+}
+
+.news-stats .heart {
+  color: #f18a07;
+  background-image: url('../img/icon-heart-light.svg');
+  opacity: 0.7;
+}
+
+.news-stats .heart.added {
+  background-image: url('../img/icon-heart-light-added.svg');
+}
+
+.news-stats .heart:focus,
+.news-stats .heart:hover {
+  opacity: 1;
+}
+/*
+.news-stats .heart:focus {
+  outline-color: #b6aaff;
+}
+*/
+.news-stats .heart:active {
+  opacity: 1;
+  background-image: url('../img/icon-heart-light-active.svg');
+}
+
+.news-stats {
+  display: flex;
+  justify-content: space-between;
+}
