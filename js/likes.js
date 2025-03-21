@@ -3,14 +3,18 @@ let hearts = document.querySelectorAll('.heart');
 
 hearts.forEach(function (heart) {
   heart.onclick = function () {
-    // Находим конкретный элемент likes-number именно у этой кнопки
-    let likesNumber = heart.querySelector('.likes-number');
+    let ref = db.ref('likes/' + index);
 
-    if (heart.classList.contains('added')) {
-      likesNumber.textContent--;
-    } else {
-      likesNumber.textContent++;
-    }
+    ref.transaction((likes) => {
+      let newLikes = heart.classList.contains('added')
+        ? (likes || 0) - 1
+        : (likes || 0) + 1;
+
+      // Обновляем текстовое поле лайков
+      likesNumber.textContent = newLikes;
+
+      return newLikes;
+    });
 
     heart.classList.toggle('added');
   };
