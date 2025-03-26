@@ -1,0 +1,108 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none;
+}
+
+.subscription-link {
+  position: relative;
+  padding-top: 8px;
+  padding-right: 2px;
+  padding-bottom: 6px;
+  padding-left: 26px;
+  margin: auto 4%;
+}
+
+.subscription-link::before {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 12px;
+  top: 9px;
+  left: 2px;
+}
+
+.subscription-link:hover {
+  padding-bottom: 4px;
+  border-bottom: 2px solid;
+}
+
+.subscription-link:active {
+  opacity: 0.6;
+}
+
+.light-theme .subscription-link {
+  color: #6653d9;
+  outline-color: #b6aaff;
+}
+
+.light-theme .subscription-link:hover {
+  border-color: #6653d9;
+}
+
+.light-theme .subscription-link::before {
+  background-image: url('img/letter-light.svg');
+}
+
+.dark-theme .subscription-link {
+  color: #9484f2;
+  outline-color: #6653d9;
+}
+
+.dark-theme .subscription-link:hover {
+  border-color: #9484f2;
+}
+
+.dark-theme .subscription-link::before {
+  background-image: url('img/letter-dark.svg');
+}
+
+.up-button {
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 75px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+}
+
+.light-theme .up-button {
+  color: #6653d9;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: #6653d9;
+  outline-color: #b6aaff;
+}
+
+.light-theme .up-button:hover {
+  color: #473c8d;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: #473c8d;
+}
+
+.dark-theme .up-button {
+  color: #9484f2;
+  background-color: rgba(10, 9, 16, 0.6);
+  border-color: #9484f2;
+  outline-color: #6653d9;
+}
+
+.dark-theme .up-button:hover {
+  color: #6653d9;
+  background-color: rgba(10, 9, 16, 0.6);
+  border-color: #6653d9;
+}
+
+.shown {
+  display: inline-block;
+}
